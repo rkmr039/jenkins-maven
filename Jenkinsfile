@@ -25,8 +25,6 @@ pipeline {
         always {
             echo "Compiling Project"
             mvn compile
-            echo "Running Employee Soriting"
-            mvn exec:java -Dexec.mainClass=com.rishab.sorting.EmployeeSorting
         }
     }
 }
