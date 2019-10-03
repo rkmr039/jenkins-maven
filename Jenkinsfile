@@ -28,7 +28,7 @@ pipeline {
     post {
         always {
             echo "Compiling Project"
-            mvn compile
+            sh 'mvn -Dmaven.test.failure.ignore=true install'
         }
     }
 }
