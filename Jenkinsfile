@@ -3,6 +3,10 @@ pipeline {
     environment{
     FOO = "STAGE"
     }
+    tools{
+    maven 'MAVEN-3.6.2'
+    jdk 'JDK1.8'
+    }
     stages {
         stage("Build"){
             steps {
