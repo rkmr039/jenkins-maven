@@ -8,7 +8,7 @@ public class MainApplication {
 		List<Employee> empList= new EmployeeCrud().showEmploy();
 		for (Employee employee : empList) {
 			System.out.println(employee);
-			System.out.println("====================================================");
+			System.out.println("===================================================");
 			
 		}
 	}
